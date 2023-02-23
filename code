@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+   int pallindrome(int n)  {
+    string s=to_string(n);
+int st=0,e=s.length()-1;
+while(st<=e){
+  if(s[st]!=s[e])return 0;
+  st++;
+  e--;
+}
+return 1;
+   }
+
+int main (){
+  int n;
+  cout<<"enetr the number "<<endl;  
+  cin>>n;
+  if(pallindrome(n)==1){
+    cout<<"number is pallindrome "<<endl;
+  }
+  if(pallindrome(n)==0){
+    cout<<"number is not pallindrome "<<endl;
+  }
+  
+return 0;
+}
