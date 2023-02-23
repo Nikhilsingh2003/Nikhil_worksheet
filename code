@@ -13,7 +13,7 @@ return 1;
 
 int main (){
   int n;
-  cout<<"enetr the number "<<endl;  
+  cout<<"enter the number "<<endl;  
   cin>>n;
   if(pallindrome(n)==1){
     cout<<"number is pallindrome "<<endl;
